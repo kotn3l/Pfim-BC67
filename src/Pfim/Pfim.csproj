@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+	  <TargetFrameworks>net6.0-windows;net7.0-windows</TargetFrameworks>
+	  <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
     <Product>Pfim</Product>
     <Description>A simple and fast .NET Standard image decoder for targa (.tga) and direct draw surface (.dds) images</Description>
     <Copyright>Nick Babcock</Copyright>
@@ -26,5 +26,6 @@
     <InformationalVersion>$(Major).$(Minor).$(Revision)</InformationalVersion>
     <Version>$(Major).$(Minor).$(Revision)</Version>
     <FileVersion>$(Major).$(Minor).$(Revision)</FileVersion>
+    <Platforms>x64</Platforms>
   </PropertyGroup>
 </Project>

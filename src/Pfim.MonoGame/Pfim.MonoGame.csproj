@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
+    <Platforms>x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None CopyToOutputDirectory="Always" Include="..\..\tests\Pfim.Tests\data\*" LinkBase="data\"/>
+    <None CopyToOutputDirectory="Always" Include="..\..\tests\Pfim.Tests\data\*" LinkBase="data\" />
     <ProjectReference Include="..\Pfim\Pfim.csproj" />
   </ItemGroup>
 
