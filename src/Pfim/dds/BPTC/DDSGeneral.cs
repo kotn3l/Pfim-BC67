@@ -185,7 +185,7 @@ namespace Pfim.dds.bptc
 
                     // KFreon: If mip is too small, skip out. This happens most often with non-square textures. I think it's because the last mipmap is square instead of the same aspect.
                     // Don't do the mip size check here (<4) since we still need to have a MipMap object for those lower than this for an accurate count.
-                    if (mipWidth <= 0 || mipHeight <= 0)  // Needed cos it doesn't throw when reading past the end for some reason.
+                    if (mipWidth <= 2 || mipHeight <= 2)  // Needed cos it doesn't throw when reading past the end for some reason.
                         break;
                     
                     MipMap mipmap = ReadCompressedMipMap(compressed, mipWidth, mipHeight, mipOffset, formatDetails, DecompressBCBlock, config);
